@@ -1,0 +1,18 @@
+<html>
+  <head></head>
+  <body>
+    <p>
+    "Enter a word/sentance you would like translated, followed by how many letters you would like it shifted by:"
+    <form>
+      <input type='text' name='string' />
+      <input type='number' name='offset' min='0' max='10'/>
+      <input type='submit' value='Translate!' />
+    </form>
+    </p>
+    <p>
+    Your translation:
+    </br>
+    <%= Caesar.new.caesar_cipher(string, offset.to_i) %>
+    </p>
+  </body>
+</html>
