@@ -1,2 +1,2 @@
-require "./caeser_cipher.rb"
+require "./caesar_cipher.rb"
 run Sinatra::Application
