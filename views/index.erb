@@ -12,7 +12,7 @@
     <p>
     Your translation:
     </br>
-    <%= Caesar.new.caesar_cipher(string, offset.to_i) %>
+    <%= Caesar.new.caesar_cipher(string, offset.to_i) if string != nil%>
     </p>
   </body>
 </html>
